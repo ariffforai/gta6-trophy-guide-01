@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-titles">
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+      <h1>LEONIDA LEGEND</h1>
+      <p class="subtitle">Every trophy, with a cited guide. A platinum roadmap. A tracker that remembers.</p>
+    </div>
+    <div class="progress-box" id="progressBox">
+      <div class="progress-numbers"><span id="earnedCount">0</span><span class="of">/ 55 earned</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-note" id="progressNote">Platinum: Vice Got a Price! — 0 of 54 to go</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Filters">
+    <input id="search" type="search" placeholder="Search trophies — name, mission, activity…" autocomplete="off">
+    <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="chip active">All 55</button>
+      <button type="button" data-kind="story" class="chip">Story</button>
+      <button type="button" data-kind="activity" class="chip">Activities</button>
+      <button type="button" data-kind="collectible" class="chip">Collectibles</button>
+      <button type="button" data-kind="online" class="chip">Online</button>
+    </div>
+    <label class="select-wrap">Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="toggle"><input type="checkbox" id="missableOnly"> Missable only</label>
+    <label class="toggle"><input type="checkbox" id="spoilerHide"> Hide story spoilers</label>
+    <div class="io-buttons">
+      <button type="button" id="exportBtn">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json"></label>
+      <button type="button" id="resetBtn" class="quiet">Reset</button>
+    </div>
+  </section>
+
+  <div class="layout">
+    <section class="list-col" aria-label="Trophy checklist">
+      <p class="list-meta" id="listMeta">Showing 55 of 55 trophies</p>
+      <ul class="trophy-list" id="trophyList"></ul>
+      <p class="empty" id="emptyState" hidden>No trophies match these filters. Try clearing the search or a filter.</p>
+      <p class="empty" id="onlineNote" hidden>No trophy in the official list is tied to online play — all 55 are earned in the single-player story and world. If a later update adds an online trophy, it will appear here.</p>
+    </section>
+
+    <aside class="side-col">
+      <section class="detail" id="detailPanel" aria-label="Selected trophy guide"></section>
+      <section class="roadmap" aria-label="Roadmap to platinum">
+        <h2>ROADMAP TO PLATINUM</h2>
+        <p class="roadmap-intro">Four stages, in order. Finish the story, then activities, then collectibles, then the 100% cleanup.</p>
+        <ol class="roadmap-stages" id="roadmapStages"></ol>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Official names, descriptions and grades follow the GTA VI trophy list as published by Exophase and PSNProfiles before launch — the two lists agree on every name, description and grade. Guides are written in our own words from those official descriptions.</p>
+  <p><strong>Honesty note.</strong> GTA VI launched 19 November 2026, so complete real guides barely exist yet. Where a location, step or trigger is not pinned down by the description or a cited source, the guide says “not yet checked in the game” instead of guessing. Check the cited sources for the latest player findings.</p>
+  <p class="fineprint">An unofficial fan guide. Not affiliated with Rockstar Games. No Rockstar artwork, logos or game images are used. Works fully offline — your checklist is stored only in this browser.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
